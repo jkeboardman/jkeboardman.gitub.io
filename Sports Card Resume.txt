@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Trading Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Trading Cards</h1>
+        <p>Turn Your Resume Into a Sports Trading Card!</p>
+        <button onclick="location.href='#card-creator'">Create Your Card</button>
+    </header>
+
+    <section id="features">
+        <h2>Why Choose Us?</h2>
+        <div class="features-container">
+            <div class="feature">Customizable Templates</div>
+            <div class="feature">Premium Materials</div>
+            <div class="feature">Eye-Catching Designs</div>
+        </div>
+    </section>
+
+    <section id="card-creator">
+        <h2>Create Your Card</h2>
+        <form id="cardForm">
+            <label for="template">Choose Template:</label>
+            <select id="template" name="template">
+                <option value="baseball">Baseball</option>
+                <option value="basketball">Basketball</option>
+                <option value="soccer">Soccer</option>
+            </select>
+
+            <label for="photo">Upload Your Picture:</label>
+            <input type="file" id="photo" name="photo">
+
+            <label for="stats">Enter Your Stats:</label>
+            <textarea id="stats" name="stats" placeholder="Skills, achievements, etc."></textarea>
+
+            <label for="material">Select Material:</label>
+            <select id="material" name="material">
+                <option value="glossy">Glossy</option>
+                <option value="matte">Matte</option>
+                <option value="holographic">Holographic</option>
+            </select>
+
+            <button type="submit">Generate Card</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Resume Trading Cards. All rights reserved.</p>
+    </footer>
+</body>
+</html>
